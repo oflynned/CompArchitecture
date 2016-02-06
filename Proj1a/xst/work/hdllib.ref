@@ -1,0 +1,10 @@
+AR register_file behavioral C:/Users/Ed/CS2022/Proj1a/register_file.vhd sub00/vhpl09 1454772065
+AR reg behavioral C:/Users/Ed/CS2022/Proj1a/reg.vhd sub00/vhpl01 1454772059
+EN mux_8_16 NULL C:/Users/Ed/CS2022/Proj1a/mux_8_16.vhd sub00/vhpl06 1454772062
+AR mux_8_16 behavioral C:/Users/Ed/CS2022/Proj1a/mux_8_16.vhd sub00/vhpl07 1454772063
+EN mux_2_16 NULL C:/Users/Ed/CS2022/Proj1a/mux_2_16.vhd sub00/vhpl04 1454771104
+AR decoder behavioral C:/Users/Ed/CS2022/Proj1a/decoder.vhd sub00/vhpl03 1454772061
+EN register_file NULL C:/Users/Ed/CS2022/Proj1a/register_file.vhd sub00/vhpl08 1454772064
+AR mux_2_16 behavioral C:/Users/Ed/CS2022/Proj1a/mux_2_16.vhd sub00/vhpl05 1454771105
+EN decoder NULL C:/Users/Ed/CS2022/Proj1a/decoder.vhd sub00/vhpl02 1454772060
+EN reg NULL C:/Users/Ed/CS2022/Proj1a/reg.vhd sub00/vhpl00 1454772058
