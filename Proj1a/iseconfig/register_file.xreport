@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-02-06T15:19:46</DateModified>
+  <DateModified>2016-02-13T18:47:00</DateModified>
   <ModuleName>register_file</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2016-02-09T20:07:03</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Ed/CS2022/Proj1a/iseconfig/register_file.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Ed/CS2022/Proj1a\</ImplementationReportsDirectory>
-  <DateInitialized>2016-02-06T15:05:19</DateInitialized>
+  <DateInitialized>2016-02-09T20:04:46</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
