@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "secureip" -o "C:/Users/Ed/CS2022/Proj1a/datapath_test_bench_isim_beh.exe" -prj "C:/Users/Ed/CS2022/Proj1a/datapath_test_bench_beh.prj" "work.datapath_test_bench" 

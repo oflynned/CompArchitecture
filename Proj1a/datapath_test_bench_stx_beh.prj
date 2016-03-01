@@ -1,6 +1,0 @@
-vhdl isim_temp "reg.vhd"
-vhdl isim_temp "mux_8_16.vhd"
-vhdl isim_temp "mux_2_16.vhd"
-vhdl isim_temp "decoder.vhd"
-vhdl isim_temp "register_file.vhd"
-vhdl isim_temp "datapath_test_bench.vhd"
