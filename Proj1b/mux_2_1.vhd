@@ -30,12 +30,18 @@ use IEEE.STD_LOGIC_1164.ALL;
 --use UNISIM.VComponents.all;
 
 entity mux_2_1 is
+	Port(
+			B_i, S0, S1 : in STD_LOGIC;
+			Y_i : out STD_LOGIC
+		);
 end mux_2_1;
 
 architecture Behavioral of mux_2_1 is
 
 begin
-
+	Y_i <= 	S0 after 5ns when B_i = '1' else
+				S1 after 5ns when B_i = '0' else
+				'0' after 5ns;
 
 end Behavioral;
 

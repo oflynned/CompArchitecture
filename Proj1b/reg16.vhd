@@ -44,7 +44,7 @@ begin
 		begin
 			if(rising_edge(Clk)) then
 				if((load0 =  '1') and (load1 = '1')) then
-					Q <= Q after 5ns;
+					Q <= D after 5ns;
 				end if;
 			end if;
 	end process;

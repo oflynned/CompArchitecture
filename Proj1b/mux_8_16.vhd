@@ -31,7 +31,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity mux_8_16 is
 	Port(
-		In0, In1, In2, In3, In4, In5, In6, In7 : in STD_LOGIC_VECTORS(15 downto 0);
+		In0, In1, In2, In3, In4, In5, In6, In7 : in STD_LOGIC_VECTOR(15 downto 0);
 		S0, S1, S2 : in STD_LOGIC;
 		Z : out STD_LOGIC_VECTOR(15 downto 0)
 		);

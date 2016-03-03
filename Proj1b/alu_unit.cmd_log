@@ -1,0 +1,1 @@
+vhdtdtfi -prj Proj1b -o C:/Users/Ed/CS2022/Proj1b/alu_unit.vhi -module alu_unit -template C:/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux_2_1.vhd -lib work full_adder.vhd -lib work ripple_adder.vhd -lib work mux_2_16.vhd -lib work logic_circuit_b.vhd -lib work logic_circuit_a_b.vhd -lib work alu_unit.vhd 

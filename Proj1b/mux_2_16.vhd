@@ -31,10 +31,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity mux_2_16 is
 	Port(
-		In0, In1 : in STD_LOGIC_VECTORS(15 downto 0);
+		In0, In1 : in STD_LOGIC_VECTOR(15 downto 0);
 		s : in STD_LOGIC;
 		Z : out STD_LOGIC_VECTOR(15 downto 0)
-		);
+	);
 end mux_2_16;
 
 architecture Behavioral of mux_2_16 is
