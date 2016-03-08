@@ -40,10 +40,10 @@ end logic_circuit_a_b;
 architecture Behavioral of logic_circuit_a_b is
 
 begin
-	logic_output_a_b <= 	(a_logic_in and b_logic_in) after 5ns when select_in = "00" else
-								(a_logic_in or b_logic_in) after 5ns when select_in = "01" else
-								(a_logic_in xor b_logic_in) after 5ns when select_in = "10" else
-								(not (a_logic_in)) after 5ns;
+	logic_output_a_b <= 	(a_logic_in and b_logic_in) after 1ns when select_in = "00" else
+								(a_logic_in or b_logic_in) after 1ns when select_in = "01" else
+								(a_logic_in xor b_logic_in) after 1ns when select_in = "10" else
+								(not (a_logic_in)) after 1ns;
 
 end Behavioral;
 

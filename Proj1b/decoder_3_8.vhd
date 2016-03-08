@@ -38,13 +38,13 @@ end decoder_3_8;
 
 architecture Behavioral of decoder_3_8 is
 begin
-		Q0 <= ((not A0) and (not A1) and (not A2)) after 5ns; --000
-		Q1 <= ((A0) and (not A1) and (not A2)) after 5ns; --001
-		Q2 <= ((not A0) and (A1) and (not A2)) after 5ns; --010
-		Q3 <= ((A0) and (A1) and (not A2)) after 5ns; --011
-		Q4 <= ((not A0) and (not A1) and (A2)) after 5ns; --100
-		Q5 <= ((A0) and (not A1) and (A2)) after 5ns; --101
-		Q6 <= ((not A0) and (A1) and (A2)) after 5ns; --110
-		Q7 <= ((A0) and (A1) and (A2)) after 5ns; --111
+		Q0 <= ((not A0) and (not A1) and (not A2)) after 1ns; --000
+		Q1 <= ((A0) and (not A1) and (not A2)) after 1ns; --001
+		Q2 <= ((not A0) and (A1) and (not A2)) after 1ns; --010
+		Q3 <= ((A0) and (A1) and (not A2)) after 1ns; --011
+		Q4 <= ((not A0) and (not A1) and (A2)) after 1ns; --100
+		Q5 <= ((A0) and (not A1) and (A2)) after 1ns; --101
+		Q6 <= ((not A0) and (A1) and (A2)) after 1ns; --110
+		Q7 <= ((A0) and (A1) and (A2)) after 1ns; --111
 end Behavioral;
 

@@ -39,11 +39,11 @@ end full_adder;
 architecture Behavioral of full_adder is
 	signal S0, S1, S2 : STD_LOGIC;
 begin
-	S0 <= (X xor Y) after 5ns;
-	S1 <= (Cin and S0) after 5ns;
-	S2 <= (X and Y) after 5ns;
-	S <= (S0 xor Cin) after 5ns;
-	Cout <= (S1 or S2) after 5ns;
+	S0 <= (X xor Y) after 1ns;
+	S1 <= (Cin and S0) after 1ns;
+	S2 <= (X and Y) after 1ns;
+	S <= (S0 xor Cin) after 1ns;
+	Cout <= (S1 or S2) after 1ns;
 
 end Behavioral;
 

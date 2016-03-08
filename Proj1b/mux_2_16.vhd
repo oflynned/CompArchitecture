@@ -40,8 +40,8 @@ end mux_2_16;
 architecture Behavioral of mux_2_16 is
 
 begin
-	Z <= 	In0 after 5ns when s='0' else
-			In1 after 5ns when s='1' else
+	Z <= 	In0 after 1ns when s='0' else
+			In1 after 1ns when s='1' else
 			x"0000" after 1ns;
 
 end Behavioral;

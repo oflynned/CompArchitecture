@@ -1,7 +1,0 @@
-work	"alu_unit.vhd"
-work	"full_adder.vhd"
-work	"logic_circuit_a_b.vhd"
-work	"logic_circuit_b.vhd"
-work	"mux_2_1.vhd"
-work	"mux_2_16.vhd"
-work	"ripple_adder.vhd"

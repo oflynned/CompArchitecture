@@ -39,9 +39,9 @@ end mux_2_1;
 architecture Behavioral of mux_2_1 is
 
 begin
-	Y_i <= 	S0 after 5ns when B_i = '1' else
-				S1 after 5ns when B_i = '0' else
-				'0' after 5ns;
+	Y_i <= 	S0 after 1ns when B_i = '1' else
+				S1 after 1ns when B_i = '0' else
+				'0' after 1ns;
 
 end Behavioral;
 

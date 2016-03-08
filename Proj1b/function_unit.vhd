@@ -93,6 +93,12 @@ begin
 		C => C_fu,
 		G => ALU_out
 	);
+	
+	F <= mux_out;
+	N_fu <= mux_out(15);
+	Z_fu <= (mux_out(15) or mux_out(14) or mux_out(13) or mux_out(12) or mux_out(11) 
+				or mux_out(10) or mux_out(9) or mux_out(8) or mux_out(7) or mux_out(6) 
+				or mux_out(5) or mux_out(4) or mux_out(3) or mux_out(2) or mux_out(1) or mux_out(0));
 
 end Behavioral;
 
