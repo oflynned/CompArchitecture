@@ -4,7 +4,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity RegFile is
 	Port(	des_d, add_a, add_b : in STD_LOGIC_VECTOR(3 downto 0);
 			Clk, load_in : in STD_LOGIC;
-			data : int STD_LOGIC_VECTOR(15 downto 0);
+			data : in STD_LOGIC_VECTOR(15 downto 0);
 			out_data_a, out_data_b : out STD_LOGIC_VECTOR(15 downto 0)
 			);
 end RegFile;

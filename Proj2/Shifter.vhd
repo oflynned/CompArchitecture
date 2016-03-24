@@ -1,3 +1,6 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
 entity shifter is
 	Port(
 		B : in STD_LOGIC_VECTOR(15 downto 0);

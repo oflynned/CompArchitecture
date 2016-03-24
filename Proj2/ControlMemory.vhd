@@ -1,11 +1,13 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity ControlMemory is
 	Port(	in_car : in STD_LOGIC_VECTOR(7 downto 0);
-			MW, MM, RW, MB, TB, TA, TD, PL, PI, IL, MC : out STD_LOGIC;
-			FS_CM : out STD_LOGIC_VECTOR(4 downto 0);
-			MS_CM : out STD_LOGIC_VECTOR(2 downto 0);
+			MW, MM, RW, MD, MB, TB, TA, TD, PL, PI, IL, MC : out STD_LOGIC;
+			FS_cm : out STD_LOGIC_VECTOR(4 downto 0);
+			MS_cm : out STD_LOGIC_VECTOR(2 downto 0);
 			NA : out STD_LOGIC_VECTOR(7 downto 0)
 			);
 end ControlMemory;
@@ -311,7 +313,7 @@ variable control_out : STD_LOGIC_VECTOR(27 downto 0);
 
 begin
 	addr := conv_integer(in_car);
-	control_out := control_mem(addr);
+	control_out := ControlMemory(addr);
 	MW <= control_out(0);
 	MM <= control_out(1);
 	RW <= control_out(2);

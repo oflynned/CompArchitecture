@@ -28,7 +28,7 @@ architecture Behavioral of Proj2 is
 	end component;
 	
 	component Memory
-		Port(	address_num : in STD_LOGIC_VECTOR(15 downto 0);
+		Port(	address_mem : in STD_LOGIC_VECTOR(15 downto 0);
 				write_data : in STD_LOGIC_VECTOR(15 downto 0);
 				mem_write : in STD_LOGIC;
 				read_data : out STD_LOGIC_VECTOR(15 downto 0)
@@ -67,9 +67,9 @@ begin
 	);
 	
 	memory_module : Memory PORT MAP(
-		address_num => dp_address_out,
+		address_mem => dp_address_out,
 		write_data => dp_data_out,
-		mem_write => mpw_MW,
+		mem_write => mpc_MW,
 		read_data => mm_read_data
 	);
 

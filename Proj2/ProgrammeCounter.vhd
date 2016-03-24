@@ -1,5 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity ProgrammeCounter is
 	Port(	PC_module_in : in STD_LOGIC_VECTOR(15 downto 0);
@@ -17,7 +19,7 @@ begin
 	
 	begin
 		if(reset = '1') then current_PC := x"0000";
-		elsif(PC_module_in = '1') then 
+		elsif(PL_module_in = '1') then 
 			current_PC := current_PC + PC_module_in;
 		elsif(PI_module_in = '1') then
 			temp_curr_PC := conv_integer(current_PC); -- get current allocation
