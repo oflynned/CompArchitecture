@@ -36,3 +36,5 @@ xst -intstyle ise -ifn "C:/Users/Ed/CS2022/Proj2/Proj2.xst" -ofn "C:/Users/Ed/CS
 xst -intstyle ise -ifn "C:/Users/Ed/CS2022/Proj2/Proj2.xst" -ofn "C:/Users/Ed/CS2022/Proj2/Proj2.syr" 
 xst -intstyle ise -ifn "C:/Users/Ed/CS2022/Proj2/Proj2.xst" -ofn "C:/Users/Ed/CS2022/Proj2/Proj2.syr" 
 xst -intstyle ise -ifn "C:/Users/Ed/CS2022/Proj2/Proj2.xst" -ofn "C:/Users/Ed/CS2022/Proj2/Proj2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s700a-fg484-4 Proj2.ngc Proj2.ngd  
+map -intstyle ise -p xc3s700a-fg484-4 -cm area -ir off -pr off -c 100 -o Proj2_map.ncd Proj2.ngd Proj2.pcf 

@@ -2,15 +2,15 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   09:20:55 03/25/2016
+-- Create Date:   09:26:28 03/25/2016
 -- Design Name:   
--- Module Name:   C:/Users/Ed/CS2022/Proj2/Proj2_TB.vhd
+-- Module Name:   C:/Users/Ed/CS2022/Proj2/RegFile_TB.vhd
 -- Project Name:  Proj2
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: Proj2
+-- VHDL Test Bench Created by ISE for module: RegFile
 -- 
 -- Dependencies:
 -- 
@@ -32,24 +32,38 @@ USE ieee.std_logic_1164.ALL;
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY Proj2_TB IS
-END Proj2_TB;
+ENTITY RegFile_TB IS
+END RegFile_TB;
  
-ARCHITECTURE behavior OF Proj2_TB IS 
+ARCHITECTURE behavior OF RegFile_TB IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT Proj2
+    COMPONENT RegFile
     PORT(
+         des_d : IN  std_logic_vector(3 downto 0);
+         add_a : IN  std_logic_vector(3 downto 0);
+         add_b : IN  std_logic_vector(3 downto 0);
          Clk : IN  std_logic;
-         reset : IN  std_logic
+         load_in : IN  std_logic;
+         data : IN  std_logic_vector(15 downto 0);
+         out_data_a : OUT  std_logic_vector(15 downto 0);
+         out_data_b : OUT  std_logic_vector(15 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
+   signal des_d : std_logic_vector(3 downto 0) := (others => '0');
+   signal add_a : std_logic_vector(3 downto 0) := (others => '0');
+   signal add_b : std_logic_vector(3 downto 0) := (others => '0');
    signal Clk : std_logic := '0';
-   signal reset : std_logic := '0';
+   signal load_in : std_logic := '0';
+   signal data : std_logic_vector(15 downto 0) := (others => '0');
+
+ 	--Outputs
+   signal out_data_a : std_logic_vector(15 downto 0);
+   signal out_data_b : std_logic_vector(15 downto 0);
 
    -- Clock period definitions
    constant Clk_period : time := 10 ns;
@@ -57,9 +71,15 @@ ARCHITECTURE behavior OF Proj2_TB IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: Proj2 PORT MAP (
+   uut: RegFile PORT MAP (
+          des_d => des_d,
+          add_a => add_a,
+          add_b => add_b,
           Clk => Clk,
-          reset => reset
+          load_in => load_in,
+          data => data,
+          out_data_a => out_data_a,
+          out_data_b => out_data_b
         );
 
    -- Clock process definitions
