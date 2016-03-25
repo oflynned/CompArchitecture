@@ -44,8 +44,10 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
+		reset <= '1';
+		wait for 40ns;
 		
-
+		reset <= '0';
       wait;
    end process;
 
