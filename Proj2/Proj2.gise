@@ -52,9 +52,14 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1458899872" xil_pn:in_ck="-3374858422252137408" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1458899990">
-      <status xil_pn:value="ExecutingRun"/>
+    <transform xil_pn:end_ts="1458899990" xil_pn:in_ck="-3374858422252137408" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1458899990">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ControlAddressRegister.vhd"/>
       <outfile xil_pn:name="ControlAddressRegister_TB.vhd"/>
       <outfile xil_pn:name="ControlMemory.vhd"/>
@@ -80,6 +85,7 @@
       <outfile xil_pn:name="Mux9to16.vhd"/>
       <outfile xil_pn:name="Mux9to16_TB.vhd"/>
       <outfile xil_pn:name="ProgrammeCounter.vhd"/>
+      <outfile xil_pn:name="ProgrammeCounter_TB.vhd"/>
       <outfile xil_pn:name="Proj2.vhd"/>
       <outfile xil_pn:name="Proj2_TB.vhd"/>
       <outfile xil_pn:name="Reg16.vhd"/>
